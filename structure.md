@@ -1,6 +1,6 @@
 # File Tree: aneramedia-starter-kit
 
-**Generated:** 10/29/2025, 3:08:17 AM
+**Generated:** 10/30/2025, 12:15:38 AM
 **Root Path:** `d:\aneramedia-starter-kit`
 
 ```
@@ -60,12 +60,15 @@
 │   ├── Models
 │   │   ├── Menu.php
 │   │   ├── Permission.php
+│   │   ├── PersonalAccessToken.php
 │   │   ├── Role.php
 │   │   └── User.php
 │   ├── Providers
 │   │   └── AppServiceProvider.php
-│   └── Services
-│       └── MenuService.php
+│   ├── Services
+│   │   └── MenuService.php
+│   └── Traits
+│       └── HasUlid.php
 ├── bootstrap
 │   ├── app.php
 │   └── providers.php
@@ -95,7 +98,8 @@
 │   │   ├── 2025_10_28_165858_create_personal_access_tokens_table.php
 │   │   ├── 2025_10_28_171522_laratrust_setup_tables.php
 │   │   ├── 2025_10_28_190754_create_menus_table.php
-│   │   └── 2025_10_28_190818_create_menu_role_table.php
+│   │   ├── 2025_10_28_190818_create_menu_role_table.php
+│   │   └── 2025_10_29_151751_convert_tables_to_ulid_primary_keys.php
 │   ├── seeders
 │   │   ├── DatabaseSeeder.php
 │   │   ├── LaratrustSeeder.php
@@ -154,8 +158,10 @@
 │   │   │   ├── f9862777e6c30bbaf9a99e57f4c06d1f.blade.php
 │   │   │   └── fd2a2fcd4e9c743a8c79a5fc93b30a77.php
 │   │   └── .gitignore
-│   └── logs
-│       └── .gitignore
+│   ├── logs
+│   │   └── .gitignore
+│   ├── admin_token.txt
+│   └── user_token.txt
 ├── tests
 │   ├── Feature
 │   │   ├── AuthTest.php
@@ -178,6 +184,7 @@
 ├── boost.json
 ├── composer.json
 ├── phpunit.xml
+├── rest-api-testing.md
 └── structure.md
 ```
 
