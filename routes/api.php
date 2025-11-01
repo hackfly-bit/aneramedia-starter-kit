@@ -20,11 +20,11 @@ require __DIR__.'/v1/menu.php';
 
 
 
-Route::get('/status', function () {
+Route::get('/v1/status', function () {
     return response()->json(['status' => 'ok']);
 });
 
-Route::get('/health', function () {
+Route::get('/v1/health', function () {
     return response()->json(['status' => 'healthy']);
 });
 
